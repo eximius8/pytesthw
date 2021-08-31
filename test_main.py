@@ -10,5 +10,5 @@ from main import is_email_valid
                                            ('w@', False),
                                            ('@tt', False),
                                            ('', False)])
-def test_is_email_valid(email, result) -> None:    
-    assert is_email_valid(email) == result
+def test_is_email_valid(email, result, write_log) -> None:
+    assert is_email_valid(email) == result, f'{email} is wrongly interpreted.'
