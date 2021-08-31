@@ -1,7 +1,10 @@
 import pytest
 
 
-@pytest.fixture()
-def write_log():
-    with open('log.txt', 'w') as f:
-        f.write('')
+""" def pytest_adoption(parser):
+    parser.adoption('--log', action='store', default='log.txt',
+                    help='log: Укажите файл для сохранения логов.') """
+
+""" @pytest.fixture
+def write_log(request):
+    return request.config.getoption('--log') """
