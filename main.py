@@ -6,4 +6,3 @@ def is_email_valid(email: str) -> bool:
 
     email_rgx = r'[^@]+@[^@]+\.[^@]+'
     return bool(re.match(email_rgx, email))
-
